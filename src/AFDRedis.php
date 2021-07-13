@@ -2,6 +2,7 @@
 
 namespace AFDRedis;
 
+use Redis;
 use AFD\AFD;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
@@ -42,6 +43,7 @@ class AFDRedis extends AFD
      */
     public function addServer($host, $port = 6379, $persistent = false)
     {
+        $this->cache = new Redis();
         if ($persistent === false) {
             $this->cache->connect($host, intval($port));
         } else {
