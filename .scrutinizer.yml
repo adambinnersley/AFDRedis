@@ -9,6 +9,12 @@ build:
                 coverage:
                     file: 'coverage'
                     format: 'clover'
+                    
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
 
 before_commands:
     - "composer install --prefer-source"
