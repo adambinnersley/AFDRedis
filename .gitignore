@@ -1,0 +1,4 @@
+/vendor/
+/nbproject/
+*.lock
+*.cache
