@@ -2,3 +2,4 @@
 /nbproject/
 *.lock
 *.cache
+clover.xml
