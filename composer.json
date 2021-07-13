@@ -2,6 +2,7 @@
     "name": "adamb/afd-redis",
     "description": "A extension to cache call made to AFD postcode evolution using a Redis server",
     "type": "library",
+    "license": "MIT",
     "require": {
         "adamb/afd": "^1.1"
     },
