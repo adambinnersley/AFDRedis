@@ -130,7 +130,7 @@ class AFDRedis extends AFD
             $response = $client->get($url);
             if ($response->getStatusCode() === 200) {
                 $body = $response->getBody();
-                $this->save($key, $body);
+                $this->save($key, strval($body));
                 return simplexml_load_string($body);
             }
         } catch (ConnectException $e) {
