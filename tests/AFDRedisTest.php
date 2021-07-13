@@ -28,7 +28,7 @@ class AFDRedisTest extends TestCase
     {
         $expiryTime = $this->AFDRedis->getExpiryTime();
         $this->assertIsInt($expiryTime);
-        $this->assertObjectHasAttribute('getExpiryTime', $this->AFDRedis->setExpiryTime(100));
+        $this->assertObjectHasAttribute('expiryTime', $this->AFDRedis->setExpiryTime(100));
         $this->assertEquals(100, $this->AFDRedis->getExpiryTime());
     }
     
