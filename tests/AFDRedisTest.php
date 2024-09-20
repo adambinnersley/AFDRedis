@@ -34,6 +34,14 @@ class AFDRedisTest extends TestCase
     
     /**
      * @covers \AFDRedis\AFDRedis::addServer
+     */
+    public function testAddRedisServer()
+    {
+        $this->assertObjectEquals($this->AFDRedis, $this->AFDRedis->addServer('localhost'));
+    }
+    
+    /**
+     * @covers \AFDRedis\AFDRedis::addServer
      * @covers \AFDRedis\AFDRedis::save
      * @covers \AFDRedis\AFDRedis::replace
      * @covers \AFDRedis\AFDRedis::fetch

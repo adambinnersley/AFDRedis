@@ -6,6 +6,7 @@ php:
 
 services:
   - redis
+  - redis-server
   
 before_script:
   - composer self-update
